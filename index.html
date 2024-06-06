@@ -1,137 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!--GOOGLE FONTES-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
-    <!--FIM GOODLE FONTES-->
-    <!--BOOTSTRAP ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--FIM BOOTSTRAP ICONS-->
-
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Prova Bimestral</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Prova 2° bimestre</h1>
+        <p>João Felipe Negrelli Santos</p>
+        <ul>
+            <li>Turma: CC1MD</li>
+            <li>Semestre: 1°</li>
+            <li>Data: 06/06/2024</li>
+        </ul>
 
-    <header>
-        <div class="interface">
-        <div class="logo">
-<a href="#">
-    <img width="80" src="https://img.freepik.com/vetores-premium/um-logotipo-f-azul-e-branco-em-um-fundo-preto_853558-5015.jpg" alt="logo do site">
-</a>
-        </div><!--"logo"-->
-
-        <nav class="menu=desktop">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Especialidades</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-            </ul>
-
-        </nav>
-
-        <div class="btn-contato">
-            <a href="#">
-             <button>Contato</button>   
-            </a>
-        </div>
-        </div><!--"interface"-->
-    </header>
-
-<main>
-    <section class="topo-do-site">
-        <div class="interface">
-           <div class="flex">
-            <div class="txt-top-site">
-                <h1>CURRÍCULO DO JOÃO FELIPE <SPAn>.</SPAn></h1>
-                <p>Este é o meu curriculo, descubra mais sobre mim</p>
-                <div class="btn-contato">
-                    <a href="#">
-                        <button>Entre em contato</button>
-                    </a>
-                </div>
-            </div><!--img-topo-site-->
-
-            <div class="img-topo-site">
-            <img width= "200px" src="imagem jf.jpeg" alt="minha foto">
-            </div><!--img-topo-site-->
-           </div><!--flex-->
-        </div><!--interface-->
-    </section><!--topo-do-site-->
-
-    <section class="Especialidades">
-        <div class="interface">
-            <h2 class="titulo">MINHAS <SPAn>ESPECIALIDADE.</SPAn></h2>
-        <div class="flex">
-            <div class="Especialidades-box">
-                <i class="bi bi-controller"></i>
-                 <h3>Games</h3>
-                 <p>Procuro sempre evoluir quando estou jogando algo, melhorar mira e buscar aprender, e também gosto de jogos de historia e utopia.</p>
-            </div><!--Especialidades-box-->
-
-            <div class="Especialidades-box">
-                <i class="bi bi-bicycle"></i>
-                 <h3>Esportes</h3>
-                 <p>Jogo futebol desde os 3 anos passei por diversos times e vários campeonatos conquistando medalahas e troféus, e na atualidade participo do time de basquete da universidade.</p>
-            </div><!--Especialidades-box-->
-
-            <div class="Especialidades-box">
-                <i class="bi bi-people"></i>
-                 <h3>Prestativo</h3>
-                 <p>Sou bastante prestativo, gosto de me comunicar com as pessoas e realizar atividades por conta propria ajudando a empresa ou a própria família.</p>
-            </div><!--Especialidades-box-->
-
-
-        </div><!--flex-->
-        </div><!--interface-->
-    </section><!--Epecialidades-->
-
-    <section class="sobre">
-    <div class="interface">
-        <div class="flex">
-            <div class="img-sobre">
-            <img src="images/eu.png" alt="">
-            </div><!--img-sobre-->
-
-         <div class="txt-sobre">
-           <h2>OLHE AQUI PARA SABER MAIS SOBRE A MINHA PESSOA,<span>JOÃO FELIPE.</span> </h2>
-              <p>Sou uma pessoa bastante comunicativa, aprendo rapido as tarefas ou jogos e curto filmes e series, futuro web design/programador
-              </p>
-              <p>Atualmente cursando ciencias da computação na universidade de vila velha, no primeiro periodo.</p>
-
-        <div class="btn-social">
-         <a href="https://www.instagram.com/jfsantoss_/?next=%2F"><button><i class="bi bi-instagram"></i></button></a>
-
-        </div><!--btn-social-->
-         </div><!--txt-sobre-->
-         
-        </div><!--flex-->
-    </div><!--interface-->
-    </section><!--sobre-->
-
-      <section class="formulario">
-         <div class="interface">
-        <h2 class="titulo">TALK <span>TO ME.</span></h2>
-        
-        <form action="">
-         <input type="text" name="" id="" placeholder="Seu nome:" required> 
-         <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-         <input type="text" name="" id="" placeholder="Seu celular:">
-         <textarea name="" id="" placeholder="Sua mensagem"></textarea>
-        
-        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+        <form id="formulario">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome"></td>
+                </tr>
+                <tr>
+                    <td><label for="matricula">Matrícula:</label></td>
+                    <td><input type="text" id="matricula" name="matricula"></td>
+                </tr>
+                <tr>
+                    <td><label for="nota1">Nota 1:</label></td>
+                    <td><input type="number" id="nota1" name="nota1" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td><label for="nota2">Nota 2:</label></td>
+                    <td><input type="number" id="nota2" name="nota2" step="0.01"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit">Registrar</button></td>
+                </tr>
+            </table>
         </form>
 
-
-         </div><!--interface-->
-      </section><!--formulario-->
-
-</main>
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Matrícula</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <button id="limparTabela">Limpar Tabela</button>
+    
+    </div>
+    
+    <script src="index.js"></script>
 
 </body>
 </html>
